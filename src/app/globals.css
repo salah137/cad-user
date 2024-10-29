@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,4 +26,18 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+header > h2 {
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.font-title{
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
 }
