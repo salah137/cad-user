@@ -20,13 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const iconComponents = new Map([
+    ['courses', <SiCoursera />],
     ['newspaper', <RiNewspaperFill />],
-    ['coursera', <SiCoursera />],
     ['about', <FaSearchPlus />]
   ]);
 
 
-  const [usedIcon, setUsedIcon] = useState(['newspaper', 'coursera', 'about']);
+  const [usedIcon, setUsedIcon] = useState(['courses','newspaper' , 'about']);
   const controller = useAnimationControls()
   const router = useRouter()
 
