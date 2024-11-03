@@ -52,7 +52,7 @@ export default function RootLayout({
             </div>
             <div onClick={
               ()=>{
-                router.push('/home/coursera')
+                router.push('/home/courses')
               }
             } className="w-full p-3 flex justify-around text-3xl hover:cursor-pointer hover:bg-white hover:text-[#5536F6] h-[10vh] items-center">
               <SiCoursera /> <h1 className="">coursera</h1>
