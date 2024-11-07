@@ -1,22 +1,49 @@
-import img from "../../img/Pasted image.png"
-import Image from "next/image"
-export default function View(){
+"use client"
+import NewsElement from "./newsElement"
+import { getFirestore, getDoc, doc, collection, query, DocumentData, getDocs, setDoc } from "firebase/firestore";
+import app from "@/app/firebase_config";
+import { useEffect, useState } from "react";
+export default function page() {
+    const db = getFirestore(app);
+
+    const [posts, setPosts] = useState<any>()
+
+    const getData = () => {
+
+
+        (async () => {
+            const queri = query(collection(db, 'posts'),)
+            const docs = await getDocs(queri)
+            let ds: any[] = []
+            docs.forEach(
+                (e) => {
+
+                    let { description, images, title } = e.data()
+                    ds.push(
+                        {
+                            description, images, title
+                        }
+                    )
+                }
+            )
+            console.log(ds);
+
+            setPosts(ds)
+        })()
+    }
+    useEffect(() => {
+        getData()
+    }, [])
+
     return <main className="h-dvh bg-gradient-to-b from-[#5536F6] to-white   flex  justify-center items-center">
         <div className="scrolling h-[89vh] overflow-scroll lg:h-full pt-[7vh]">
-        {element()}
-        {element()}
-        {element()}
-        {element()}
-        {element()}
+            
+              {posts &&  posts.map((e : any)=>{
+                    return  <NewsElement title={e.title} description={e.description} images = {e.images}/>
+                })
+            } 
         </div>
 
     </main>
 }
 
-const element = ()=>{
-    return <div className="m-5 p-5 bg-gradient-to-b from-[#F5A208] to-[#F1D49F] text-black rounded-xl ">
-        <Image src = {img} alt = "ximage" className="mb-4 rounded-xl lg:w-full md:w-full lg:h-[50vh]"/>
-        <h1 className="font-black text-3xl">title balabama</h1>
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, debitis vitae! Et vitae voluptates sequi quo perspiciatis eius dolores. Rem, mollitia ducimus sed laudantium distinctio tempora commodi deserunt explicabo nihil.</h2>
-    </div>
-}

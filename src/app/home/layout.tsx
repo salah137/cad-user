@@ -10,7 +10,6 @@ import { FaSearchPlus } from "react-icons/fa";
 import { SiCoursera } from "react-icons/si";
 import { useAnimationControls } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { Metadata } from "next";
 
 
 
@@ -36,13 +35,13 @@ export default function RootLayout({
       <body
         className=" bg-gradient-to-b from-[#5536F6] to-white overflow-scroll"
       >
-        <header className="fixed bg-[#5536F6] p-5 w-full flex flex-row items-center lg:h-[5vw] lg:flex lg:justify-end">
+        <header className="fixed bg-[#5536F6] p-5 w-full flex flex-row items-center lg:h-[4vh] lg:flex lg:justify-end">
           <Image src={logo} alt="logo" className="w-[20vw] lg:w-[5vw]" />
           <h2 className="ml-12 text-2xl font-title lg:hidden ">club art et design</h2>
         </header>
 
         <div className="lg:flex">
-          <div className="hidden lg:block w-[30vw] h-[100vh] bg-[#5536F6] pt-[10vh]">
+          <div className="hidden lg:block w-[20vw] h-[100vh] bg-[#5536F6] pt-[10vh]">
             <div onClick={
               ()=>{
                 router.push('/home/newspaper')
