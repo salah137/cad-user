@@ -32,7 +32,7 @@ export default function page() {
                 light={false}
                 pip={true}
             />}
-            <h1 className="text-black text-3xl m-1 lg:m-3">{item["title"]}</h1>
+            <h1 className="text-black font-black text-3xl m-1 lg:m-3">{item["title"]}</h1>
             
             <h3 className="text-black text-xl m-3 lg:ml-5">{item["description"]}</h3>
             
