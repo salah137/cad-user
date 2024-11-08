@@ -37,7 +37,7 @@ export default function page() {
             getData()
         },[]
     )
-    return <main className="w-[100vw] overflow-scroll h-dvh">
+    return <main className="w-[100vw] overflow-scroll h-[100%]">
       <div className="mt-[10vh]"> {
         courses && courses.map(
             (e : any)=>{
