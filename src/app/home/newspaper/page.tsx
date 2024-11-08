@@ -32,6 +32,8 @@ export default function page() {
         })()
     }
     useEffect(() => {
+        console.log("hello effect");
+        
         getData()
     }, [])
 

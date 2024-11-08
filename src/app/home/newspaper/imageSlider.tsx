@@ -6,7 +6,7 @@ export default function ImageSlider(props: any) {
     const [current, setCurrent] = useState(0)
 
     return <div className="relative w-full h-[80%]  bg-[rgb(0,0,0,0.2)] flex justify-center items-center p-5 rounded-xl">
-        <Image src={props.images[current]} alt={"image"} className="mb-4  rounded-xl  lg:h-[50vh] z-0" />
+        <Image width={500} height={500} src={props.images[current]} alt={"image"} className="mb-4  rounded-xl  lg:h-[50vh] z-0" />
 
         {props.images.length !=1 && <div className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10 hover:bg-[rgb(0,0,0,0.25)] pl-3 h-full flex justify-center items-center rounded-xl pr-3" onClick={
             () => {
