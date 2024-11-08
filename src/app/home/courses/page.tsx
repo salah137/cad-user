@@ -8,7 +8,7 @@ export default function View() {
     const router = useRouter()
 
     return <main
-        className="overflow-scroll w-[100vw] h-[100%] bg-gradient-to-b from-[#5536F6] to-white   flex flex-col lg:flex-row md:flex-row justify-center items-center">
+        className="overflow-scroll w-[100vw] h-[95vh] bg-gradient-to-b from-[#5536F6] to-white   flex flex-col lg:flex-row md:flex-row justify-center items-center">
             
         <div onClick={
             ()=>{
