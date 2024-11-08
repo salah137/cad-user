@@ -67,7 +67,7 @@ export default function RootLayout({
           {children}
         </div>
 
-        <footer className="fixed bg-[#F5A208] h-[5vh] w-full top-[95vh] rounded-tl-3xl rounded-tr-3xl flex flex-row justify-around items-center pt-1 lg:hidden">
+        <footer className="fixed bg-[#F5A208] h-[5vh] w-full top-[95%] rounded-tl-3xl rounded-tr-3xl flex flex-row justify-around items-center pt-1 lg:hidden">
           <div
             className="left-icone text-4xl flex md:w-[60vw] justify-center items-center"
             onClick={() => {
