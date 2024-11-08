@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="h-dvh bg-gradient-to-b from-[#5536F6] to-white overflow-scroll"
+        className=" bg-gradient-to-b from-[#5536F6] to-white overflow-scroll"
       >
         <header className="mb-4 md:mb-[5vh] fixed bg-[#5536F6] p-5 w-full flex flex-row items-center lg:h-[8vh] lg:flex lg:justify-end">
           <Image src={logo} alt="logo" className="w-[20vw] lg:w-[5vw]" />

@@ -41,7 +41,7 @@ export default function page(){
     useEffect(()=>{
         getItems()
     },[])
-    return <main className="h-dvh pt-[7vh] w-full lg:w-[60vw]  overflow-y-scroll pb-[4vh]">
+    return <main className="h-dvh pt-[7vh] w-full lg:w-[60vw]  overflow-y-scroll pb-[4vh] ">
       <div className="mt-[5vh]">  {items &&
             items.map(
                 (e:any)=>{
