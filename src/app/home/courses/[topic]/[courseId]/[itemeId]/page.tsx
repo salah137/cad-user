@@ -22,7 +22,7 @@ export default function page() {
             })()
         }, []
     )
-    return <main className="h-[100%] overflow-scroll pb-[5vh]">
+    return <main className="h-[100%] overflow-scroll pb-[10vh]">
         {item && <div className="flex justify-center items-center flex-col">
             {item["video"] && <ReactPlayer
                 width={window.screen.width < 900 ? "100vw" :  "80vw"}
