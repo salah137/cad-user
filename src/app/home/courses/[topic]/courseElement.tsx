@@ -1,5 +1,4 @@
 import Image from "next/image"
-import img from '../../../img/Pasted image.png'
 
 export default function Course (props : any){
     return <div className="m-5 w-[90vw] lg:w-[70vw] flex flex-col lg:flex-row h-[fit-content] md:h-[50vh] lg:h-[30vh] bg-gradient-to-b from-[#F5A208] to-[#F1D49F] rounded-2xl p-5 hover:cursor-pointer">
