@@ -46,21 +46,21 @@ export default function RootLayout({
               ()=>{
                 router.push('/home/newspaper')
               }
-            } className="w-full p-3 flex justify-around text-3xl hover:cursor-pointer hover:bg-white hover:text-[#5536F6] h-[10vh] items-center">
+            } className="w-full p-3 flex justify-around text-3xl hover:cursor-pointer hover:bg-[#DFE0AF] hover:text-[#a57b2d] h-[10vh] items-center">
               <RiNewspaperFill /> <h1 className="">newspaper</h1>
             </div>
             <div onClick={
               ()=>{
                 router.push('/home/courses')
               }
-            } className="w-full p-3 flex justify-around text-3xl hover:cursor-pointer hover:bg-white hover:text-[#5536F6] h-[10vh] items-center">
+            } className="w-full p-3 flex justify-around text-3xl hover:cursor-pointer hover:bg-[#DFE0AF] hover:text-[#a57b2d] h-[10vh] items-center">
               <SiCoursera /> <h1 className="">coursera</h1>
             </div>
             <div onClick={
               ()=>{
                 router.push('/home/about')
               }
-            } className="w-full p-3 flex justify-around text-3xl hover:cursor-pointer hover:bg-white hover:text-[#5536F6] h-[10vh] items-center">
+            } className="w-full p-3 flex justify-around text-3xl hover:cursor-pointer hover:bg-[#DFE0AF] hover:text-[#a57b2d] h-[10vh] items-center">
               <FaSearchPlus /> <h1 className="">about</h1>
             </div>
           </div>
