@@ -14,7 +14,7 @@ export default function View() {
             ()=>{
                 router.push("courses/design")
             }
-        } className="w-[50vw] lg:w-[30vw] p-3 bg-gradient-to-b from-[#F5A208] to-[#F1D49F] rounded-2xl flex flex-col justify-around h-[25vh] lg:h-[50vh] md:h-[35vh]  m-5 hover:cursor-pointer">
+        } className="w-[50vw] lg:w-[30vw] p-3 bg-[#a57b2d] rounded-2xl flex flex-col justify-around h-[25vh] lg:h-[50vh] md:h-[35vh]  m-5 hover:cursor-pointer">
             <Image src = {desine} alt = "design" className="rounded-2xl"/>
         </div>
         <div  onClick={
