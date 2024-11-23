@@ -33,15 +33,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className=" bg-gradient-to-b from-[#5536F6] to-white overflow-scroll"
+        className=" bg-[#DFE0AF] to-white overflow-scroll"
       >
-        <header className="mb-4 md:mb-[5vh] fixed bg-[#5536F6] p-5 w-full flex flex-row items-center lg:h-[8vh] lg:flex lg:justify-end">
+        <header className="mb-4 md:mb-[5vh] fixed bg-[#a57b2d] p-5 w-full flex flex-row items-center lg:h-[8vh] lg:flex lg:justify-end">
           <Image src={logo} alt="logo" className="w-[20vw] lg:w-[5vw]" />
           <h2 className="ml-12 text-2xl font-title lg:hidden ">club art et design</h2>
         </header>
 
         <div className="lg:flex">
-          <div className="hidden lg:block w-[20vw] h-[100vh] bg-[#5536F6] pt-[10vh]">
+          <div className="hidden lg:block w-[20vw] h-[100vh] bg-[#a57b2d] pt-[10vh]">
             <div onClick={
               ()=>{
                 router.push('/home/newspaper')
@@ -67,7 +67,7 @@ export default function RootLayout({
           {children}
         </div>
 
-        <footer className="fixed bg-[#F5A208] h-[5vh] w-full top-[95%] rounded-tl-3xl rounded-tr-3xl flex flex-row justify-around items-center pt-1 lg:hidden">
+        <footer className="fixed bg-[#a57b2d] h-[5vh] w-full top-[95%] rounded-tl-3xl rounded-tr-3xl flex flex-row justify-around items-center pt-1 lg:hidden">
           <div
             className="left-icone text-4xl flex md:w-[60vw] justify-center items-center"
             onClick={() => {

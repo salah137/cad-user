@@ -37,7 +37,7 @@ export default function page() {
         getData()
     }, [])
 
-    return <main className="h-[100vh] overflow-scroll bg-gradient-to-b from-[#5536F6] to-white   flex  justify-center items-center">
+    return <main className="h-[100vh] overflow-scroll bg-[#DFE0AF] flex  justify-center items-center">
         <div className="scrolling h-[89vh] overflow-scroll lg:h-full pt-[7vh]">
             
               {posts &&  posts.map((e : any)=>{
